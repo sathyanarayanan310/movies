@@ -1,0 +1,14 @@
+{
+  "name": "raees",
+  "version": "1.0.0",
+  "description": "drama",
+  "main": "schema crud.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "srk",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {}
+}

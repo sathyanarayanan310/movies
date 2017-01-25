@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>admin page</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+        <script src
+</head>
+<body ng-app="movieApp">
+  <div>
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+        <h1>
+          <a class="navbar=brand" href="">Mera Movies</a></h1>
+        </div>
+        <div>
+          <ul class="nav navbar-nav">
+            <li><a href="">Home</a></li>
+            <li><a href="">Movies List</a></li>
+            <li><a href="">Add Movies details</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <table class="table">
+                <thead>
+                    <tr>
+                        <th>Movie Name</th>
+                        <th>Movie Duration</th>
+                        <th>Movie Year</th>
+                        <th>Movie category</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input ng-model="contact.movieName" /></td>
+                        <td><input ng-model="contact.movieDuration" /></td>
+                        <td><input ng-model="contact.movieYear" /></td>
+                        <td><input ng-model="contact.movieCategory" /></td>
+                        <td><button ng-click="addMovie()" class="btn btn-primary">Add Movie</button></td>
+                        <td><button ng-click="updateMovie()" class="btn btn-primary">Update</button></td>
+                    <tr ng-repeat=" contact in contactlist">
+                        <td></td>
+                        <td><button ng-click="removeMovie(contact)" class="btn btn-danger">Remove</button></td>
+                        <td><button ng-click="editMovie(contact)" class="btn btn-primary">Edit</button></td>
+                    </tr>
+                </tbody>
+     </table>
+</body>
+</html>
